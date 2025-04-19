@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="contact-page">
+    <div class="container">
+        <header><h1>Contact us</h1></header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About me</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </div>
+        <main>
+            <div class="banner">
+                <div class="overlay"></div>
+                <img src="img\banner4.jpg" alt="Contact Us My art" class="banner-image">
+                <div class="banner-content">
+                    <p class="photo-credit">Picture by Roger Fox</p>
+                </div>
+            </div>
+            <div class="text-box">
+                <h2>Get in Touch with Us</h2>
+                <p>We'd love to hear from you! Please use the contact form below to get in touch with us.</p>
+                
+                <input type="checkbox" id="showMessage" style="display: none;">
+                
+                <form class="contact-form" action="#" method="post" aria-label="Contact form">
+                    <div class="form-group">
+                        <label for="title">
+                            <i class="fas fa-user-tag" aria-hidden="true"></i>
+                            Title:
+                        </label>
+                        <div class="input-group">
+                            <select id="title" name="title" required aria-required="true">
+                                <option value="">Select title</option>
+                                <option value="mr">Mr</option>
+                                <option value="mrs">Mrs</option>
+                                <option value="ms">Ms</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                            Name:
+                        </label>
+                        <div class="input-group">
+                            <input type="text" id="name" name="name" required aria-required="true" placeholder="Enter your full name">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            Phone Number:
+                        </label>
+                        <div class="input-group">
+                            <input type="tel" id="phone" name="phone" required aria-required="true" placeholder="Enter your phone number" pattern="[0-9\+\-\s()]*">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            Email Address:
+                        </label>
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" required aria-required="true" placeholder="Enter your email address">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">
+                            <i class="fas fa-comment-alt" aria-hidden="true"></i>
+                            Type your message here:
+                        </label>
+                        <div class="input-group">
+                            <textarea id="message" name="message" required aria-required="true" placeholder="Enter your message" rows="5"></textarea>
+                        </div>
+                    </div>
+                    
+                    <label for="showMessage" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </label>
+                </form>
+
+                <div class="success-message">
+                    <i class="fas fa-check-circle"></i>
+                    Your message has been sent successfully! Thank you for contacting us!
+                    <br>
+                    <button style="display: block; margin: 20px auto;" class="back-btn" onclick="window.location.href='contact.html'">Back to Contact</button>
+                </div>
+            </div>
+            <div class="text-box">Icons used from <a href="https://fontawesome.com/icons">Fontawesome</a></div>
+        </main>
+        <footer>&copy; 2025 Rogers Art Gallery. All rights reserved.</footer>
+    </div>
+</body>
+</html>
